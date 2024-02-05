@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="shortcut icon" href="https://res.cloudinary.com/tizeti/image/upload/v1543035499/favicon.ico" />
+        <title>Tizeti</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+    
+            body {
+                font-family: Arial;
+                margin: 0;
+            }
+    
+            .footer {
+                padding: 20px;
+                text-align: center;
+            }
+    
+            @media screen and (max-width: 768px) {
+                .container {
+                    padding: 10px;
+                    font-size: 10px;
+                }
+    
+                .smallFont {
+                    font-size: 8px;
+                }
+    
+                .headerFont {
+                    font-size: 20px !important;
+                }
+            }
+    
+            @media screen and (min-width: 768px) {
+                .container {
+                    padding: 10px 70px 10px;
+                    font-size: 15px;
+                }
+    
+                .smallFont {
+                    font-size: 10px;
+                }
+    
+                .headerFont {
+                    font-size: 30px !important;
+                }
+    
+    
+                .imgWidth img {
+                    width: 70px;
+                }
+            }
+    
+            @media screen and (min-width: 1200px) {
+                .container {
+                    padding: 30px 200px 10px;
+                    font-size: 20px;
+                }
+    
+                .smallFont {
+                    font-size: 15px;
+                }
+    
+                .headerFont {
+                    font-size: 40px !important;
+                }
+    
+    
+                .imgWidth img {
+                    width: 85px;
+                }
+            }
+    
+            .d-flex {
+                display: flex;
+                justify-content: space-between;
+            }
+    
+            .heading {
+                color: #bbb;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+    
+            a.linkStyle {
+                text-decoration-line: none;
+            }
+    
+            hr.solid {
+                border-top: 4px solid #bbb;
+            }
+    
+            .mt8 {
+                margin-top: 8px;
+            }
+    
+            .table,
+            .th th,
+            .td td {
+                text-align: center;
+                border: 3px solid #bbbbbb;
+                border-collapse: collapse;
+            }
+    
+            th,
+            td {
+                padding: 15px;
+            }
+    
+            th {
+                background-color: #f2f2f2;
+            }
+    
+            .weight {
+                font-weight: 500;
+            }
+    
+            .verticalLine {
+                border-left: 3px solid #bbb !important;
+            }
+    
+            .box {
+                margin: 20px 0px;
+                border: 3px solid #bbbbbb;
+                border-collapse: collapse;
+                white-space: nowrap;
+            }
+    
+            .borderBottom {
+                border-bottom: 3px solid #bbbbbb !important;
+            }
+    
+            .pt-8 {
+                padding-top: 8px;
+            }
+    
+            @media screen and (min-width: 375px) {
+                .p-2 {
+                    padding: 4px;
+                }
+            }
+    
+    
+            .pt-30 {
+                padding-top: 30px;
+            }
+    
+            .pt-250 {
+                padding: 250px 0 0;
+            }
+    
+            .p-0 {
+                padding: 0px;
+            }
+    
+            .py-0 {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+    
+            .px-0 {
+                padding-left: 0;
+                padding-right: 0;
+            }
+    
+            .text-right {
+                text-align: right;
+            }
+    
+            .mr-6 {
+                margin-right: 6px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="content">
+                <div style="padding:5px" class="d-flex">
+                    <div class="imgWidth" style="padding: 10px;">
+                        <img src="https://res.cloudinary.com/tizeti/image/upload/v1543035499/favicon.ico" alt="Tizeti" />
+                    </div>
+                    <div class="">
+                        <h2 class="heading headerFont">SALES QUOTATION</h2>
+                    </div>
+                </div>
+    
+                <div class="">
+                    <div style="padding: 8px;">
+                        <div class="p-2">
+                            Wifi.com.ng <br />
+                            Tizeti Network Limited<br />
+                            Lekki, Lagos<br />
+                        </div>
+                        <div class="">
+                            <div class="d-flex p-2">
+                                <i class="d-flex">
+                                    <div class="mr-6">
+                                        <div>Phone:</div>
+                                        <div>Email:</div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <a class="linkStyle" href="tel:+23412291000">+23412291000</a>
+                                        </div>
+                                        <div>
+                                            <a class="linkStyle" href="mailto:internet@wifi.com.ng">internet@wifi.com.ng</a>
+                                        </div>
+                                    </div>
+                                </i>
+                                <div class="d-flex">
+                                    <div class="mr-6">
+                                        <div>Date:</div>
+                                        <div>Quotation No:</div>
+                                    </div>
+                                    <div>
+                                        <div>${date}</div>
+                                        <div>${quotation_no}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <hr class="solid" />
+    
+                    <div class="">
+                        <div class="d-flex" style="padding: 8px;">
+                            <div>
+                                <div class="smallFont">Charge To</div>
+                                <div class="weight mt8">
+                                    ${name}<br />
+                                    ${address}
+                                </div>
+                            </div>
+                            <div>
+                                <div class="smallFont">Delivered To</div>
+                                <div class="weight mt8">
+                                    ${name}<br />
+                                    ${address}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="" style="padding-bottom: 8px;overflow-x:auto;">
+                        <table class="table box" style="width: 100%;">
+                            <tr class="th borderBottom">
+                                <th scope="col">Customers Reference</th>
+                                <th scope="col">Sales Person</th>
+                                <th scope="col">Your VAT no</th>
+                                <th scope="col">Our Quotation No</th>
+                                <th scope="col">Valid Until</th>
+                            </tr>
+                            <tr class="td">
+                                <td></td>
+                                <td>Sales Person</td>
+                                <td></td>
+                                <td>${quotation_no}</td>
+                                <td>${valid_until}</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <i class="weight">Payment Terms: Cash Only</i>
+    
+                    <div class="" style="padding-bottom: 8px;overflow-x:auto;">
+                        <table class="box" style="width: 100%;">
+                            <tr class="borderBottom">
+                                <th scope="col">Item Code</th>
+                                <th scope="col">Item Description</th>
+                                <th scope="col">Quantity/Unit</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Discount %</th>
+                                <th scope="col" class="verticalLine text-right">Total</th>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td>${item_code}</td>
+                                <td>${item_description}</td>
+                                <td>${quantity} ${unit}</td>
+                                <td>${price}</td>
+                                <td></td>
+                                <td class="verticalLine text-right">${total}</td>
+                            </tr>
+                            <tr class="">
+                                <td colspan="3"></td>
+                                <td colspan="2" class="pt-250">Sub-total</td>
+                                <td class="verticalLine text-right" style="padding-top: 250px;">${sub_total}</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"></td>
+                                <td colspan="2" class="p-0">Shipping</td>
+                                <td class="py-0 verticalLine text-right">0.00</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"></td>
+                                <td colspan="2" class="p-0">TOTAL ORDER EX VAT</td>
+                                <td class="py-0 verticalLine text-right">${total_ex_vat}</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"></td>
+                                <td colspan="2" class="px-0 pt-30" style="padding-bottom: 60px;">
+                                    <strong>TOTAL ORDER VAT INCL.</strong>
+                                </td>
+                                <td class="pt-30 verticalLine text-right" style="padding-bottom: 60px;">
+                                    <strong>${total_with_vat}</strong>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+    
+                <div class="footer">
+                    <i>
+                        All amounts stated in - NGN <br />
+                        Bank: Zenith Bank, Bank Account: 1013184381
+                    </i>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    </html>
